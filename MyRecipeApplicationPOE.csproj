@@ -65,6 +65,12 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Create_Ingredients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_Ingredients.Designer.cs">
+      <DependentUpon>Create_Ingredients.cs</DependentUpon>
+    </Compile>
     <Compile Include="Create_Recipe.cs">
       <SubType>Form</SubType>
     </Compile>
