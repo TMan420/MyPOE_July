@@ -57,6 +57,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="RecipeSteps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecipeSteps.Designer.cs">
+      <DependentUpon>RecipeSteps.cs</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -96,12 +102,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Create_Ingredients.resx">
+      <DependentUpon>Create_Ingredients.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Create_Recipe.resx">
       <DependentUpon>Create_Recipe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecipeSteps.resx">
+      <DependentUpon>RecipeSteps.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

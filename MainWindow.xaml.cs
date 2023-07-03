@@ -20,11 +20,10 @@ namespace MyRecipeApplicationPOE
     /// </summary>
     public partial class MainWindow : Window
     {
-        public static MainWindow instance;
         public MainWindow()
         {
             this.InitializeComponent();
-            instance = this;
+
         }
 
         private void B1Click(object sender, RoutedEventArgs e)
@@ -33,8 +32,13 @@ namespace MyRecipeApplicationPOE
             this.Visibility = Visibility.Hidden;
             nextPage.Show();
         }
+        private void B2_Click(object sender, RoutedEventArgs e)
+        {
+            RecipeSteps step = new RecipeSteps();
+            step.Visible = true;
+        }
 
-        private void B7_Click(object sender, RoutedEventArgs e)
+        private void Exit_Click(object sender, RoutedEventArgs e)
         {
             Environment.Exit(0);
             this.Visibility = Visibility.Hidden;

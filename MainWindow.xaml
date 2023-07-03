@@ -35,12 +35,12 @@
 
         <Label>Welcome</Label>
         <Button x:Name="B1" Click="B1Click" >Create</Button>
-        <Button x:Name="B2">Display</Button>
+        <Button x:Name="B2" Click="B2_Click">Display</Button>
         <Button x:Name="B3">Scale</Button>
         <Button x:Name="B4">Delete</Button>
         <Button x:Name="B5">Clear</Button>
         <Button x:Name="B6">List</Button>
-        <Button x:Name="B7" Click="B7_Click">Exit</Button>
+        <Button x:Name="Exit" Content="Exit" Click="Exit_Click"/>
     </StackPanel>
 
 

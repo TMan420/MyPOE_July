@@ -25,13 +25,6 @@ namespace MyRecipeApplicationPOE
 
         }
 
-        private void UpButton_Click(object sender, EventArgs e)
-        {
-            int Clicked = 0;
-            Clicked++;
-            IngAmount.Text = "King";
-        }
-
         private void BackButton_Click(object sender, EventArgs e)
         {
             this.Close();

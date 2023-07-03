@@ -16,5 +16,12 @@ namespace MyRecipeApplicationPOE
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            RecipeSteps x = new RecipeSteps();
+            x.Visible = true;
+            this.Close();
+        }
     }
 }
